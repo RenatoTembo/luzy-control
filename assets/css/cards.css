@@ -1,0 +1,131 @@
+.container-f {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-gap: 0.75rem; /* To define the gap between rows/columns */
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background-color: #f0f0f0ce; /* For contrast */
+    color: #fff;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  .container-f .card {
+    /* This will come in handy later to center the contents */
+    position: relative;
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+    max-height: 250px;
+    overflow: hidden;
+  }
+  .container-f .card:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+  .container-f .card .card-top{
+    width: 100%;
+    height: 170px;
+    background-color: #3aaaffa6;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4px 4px 0px 0px;
+  }
+  .container-f .card .car-link{
+    width: 100%;
+    height: 80px;
+    position: relative;
+    background-color: #f8f8f8a6;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding-left: 15px;
+  }
+  .container-f .card .car-link span, .container-f .card .card-body{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .container-f .card .car-link i{
+    font-size: 2rem;
+    position: absolute;
+    right: 7px;
+    top: 10px;
+    cursor: pointer;
+  }
+  .container-f .card .car-link i:active{
+    color: red;
+  }
+  
+  .container-f .card .card-body{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.849);
+    border-radius: 4px 4px 0px 0px;
+    transform: translateY(255px);
+  }
+  .container-f .card:hover .card-body{
+    transform: translateY(0px);
+    transition: all 1s ease-in-out;
+  }
+  .container-f .card .card-body .title{
+    float: left;
+    font-size: 1.2rem;
+    margin-top: -10px;
+  }
+  .container-f .card .card-body .text-info-s{
+    text-align: justify;
+    margin-top: 25px;
+    color: black;
+  }
+  .container-f .card .card-body .text-info-s ul{
+    text-align: justify;
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+  }
+  .container-f .card .card-body .text-info-s ul li{
+    font-size: 10pt;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    list-style: inside;
+    line-height: 0px;
+  }
+  .container-f .card .desconto{
+    position: absolute;
+    right: 7px;
+    top: 0px;
+    color: rgb(97, 96, 96);
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  @-webkit-keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+
+  .tab-pane{
+    background: transparent;
+  }

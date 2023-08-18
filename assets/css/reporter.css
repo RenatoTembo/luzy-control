@@ -1,0 +1,82 @@
+#cabecalhoA4{
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+#cabecalhoA4 img{
+  width: 90px;
+  height: 80px;
+}
+#cabecalhoA4 textarea, textarea{
+    text-align: center;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    box-shadow: none;
+    outline: 0;
+    resize: none;
+    font-size: 12pt;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+#cabecalho-landscap{
+  text-align: justify;
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid black;
+  font-size: 10pt;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
+
+#cabecalho-landscap .detalhes{
+  display: block;
+  float: left;
+  margin-left: 3px;
+}
+
+#cabecalho-landscap img{
+  width: 75px;
+  height: 67px;
+  float: left;
+}
+
+#fatura{
+  display: none;
+}
+
+#reportG, #doc-emitido, #fluxo,#lista-turma,#boletim,#ficha, #cartao, #mini-pauta, #rel-emitido{
+  display: none;
+}
+
+@media print{
+  .no-print,#div-color {
+    display: none;
+  }
+  #cabecalhoA4{
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+
+  #cabecalho-landscap{
+    text-align: justify;
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid black;
+    font-size: 11pt;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    display: block;
+    orphans: 5;
+    page-break-after: auto;
+  }
+  #fatura, #doc-emitido, #fluxo,#cartao,#lista-turma,#boletim,#ficha, #cartao, #mini-pauta, #rel-emitido{
+    display: block;
+    margin-top: -40px;
+    orphans: 5;
+    page-break-after: avoid;
+  }
+}
